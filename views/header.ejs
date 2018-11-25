@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Mangi.kz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900" rel="stylesheet">
+</head>
+
+<body>
+    <% if (header && header === "black") { %>
+        <div class="nav black" id="menu">
+    <% } else { %>
+        <div class="nav" id="menu">
+    <% } %>
+        <a href="/"><img src="svg/logo.svg"></a>
+        <div class="menu">
+            <a href="/">Главная</a>
+            <a href="/projects">Работы</a>
+            <a href="/contacts">Контакты</a>
+        </div>
+    </div>
+
+    <div class="hamburger">
+        <div id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <a href="/">Главная</a>
+        <a href="/projects">Работы</a>
+        <a href="/contacts">Контакты</a>
+    </div>
+    
+    <div class="loading" id="loader">
+        <img class="rotating" src="svg/icon.svg">
+        <p>Mangi.kz</p>
+        <div class="line loads"></div>
+    </div>

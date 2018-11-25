@@ -1,0 +1,43 @@
+<% include header %>
+
+<div id="webgl">
+
+<script src="js/three.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+	$(function() {
+		$(".btn-round").click({animateIn: "closeButton", animateOut: "plusButton"}, animate_function);			
+				
+	    function animate_function(event){
+			$('.overlay').toggleClass("open");
+			if( $(this).hasClass(event.data.animateIn) ) {
+				$(this).removeClass(event.data.animateIn).addClass(event.data.animateOut);
+			} else if($(this).hasClass(event.data.animateOut) ) {
+				$(this).removeClass(event.data.animateOut).addClass(event.data.animateIn);
+			} else {
+				$(this).addClass('animated ' + event.data.animateIn);
+			}     
+		} 
+	});
+	
+	document.addEventListener("DOMContentLoaded", function() {
+        var loader = document.getElementById("loader");
+        menu.onclick = function(e){
+            if(!isopen) {
+                menu.classList.add("open");
+                overlay.classList.add("open");
+                isopen = true;
+            } else {
+                menu.classList.remove("open");
+                overlay.classList.remove("open");
+                isopen = false;
+            }
+        };
+        setTimeout(() => {
+            loader.classList.add("loaded");
+            setTimeout(() => { loader.style.display = "none"; }, 500)
+        }, 1000);
+    });
+</script>
