@@ -4,12 +4,34 @@
     <title>Mangi.kz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; }
+        video { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; }
+        p { line-height: 1.5rem; }
+        
+        .loading { width: 100%; position: fixed; top: 0; left: 0; height: 100vh;
+            background: #222; z-index: 100; display: flex; justify-content: center;
+            align-items: center; flex-direction: column; transition: all .5s ease; }
+        .loading img { height: 4rem; }
+        .loading p { color: #fff; }
+        .line { position: absolute; bottom: 0; right: 0; width: 1rem; height: 1vh;
+            background: #623cea; -webkit-animation: loads 1s forwards;
+            animation: loads 1s forwards; -moz-animation: loads 1s forwards; }
+        .loading.loaded { opacity: 0; }  
+    </style>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900" rel="stylesheet">
 </head>
 
 <body>
+    <div class="loading" id="loader">
+        <img class="rotating" src="svg/icon.svg">
+        <p>Mangi.kz</p>
+        <div class="line loads"></div>
+    </div>
+    
     <% if (header && header === "black") { %>
         <div class="nav black" id="menu">
     <% } else { %>
@@ -35,10 +57,4 @@
         <a href="/">Главная</a>
         <a href="/projects">Работы</a>
         <a href="/contacts">Контакты</a>
-    </div>
-    
-    <div class="loading" id="loader">
-        <img class="rotating" src="svg/icon.svg">
-        <p>Mangi.kz</p>
-        <div class="line loads"></div>
     </div>

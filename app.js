@@ -6,7 +6,7 @@ var express = require("express"),
 var app = express(),
     key = "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";
 
-app.use(parser.urlencoded({ extended: true }))
+app.use(parser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
