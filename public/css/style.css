@@ -81,7 +81,7 @@
 .footer > div { display: flex; flex-direction: column; z-index: 1; }
 .footer p { font-size: 1rem; color: #fff; }
 .footer .social { display: flex; padding-top: 1rem; cursor: pointer; }
-.footer .social img { height: 1.5rem; margin-right: 1rem; }
+.footer .social img { height: 2rem; margin-right: 1rem; }
 .footer .copy { color: #525252; margin-top: 4.5rem; }
 
 .newsletters { display: flex; justify-content: flex-end; margin-top: 3rem; }
