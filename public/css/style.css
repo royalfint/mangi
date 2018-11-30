@@ -80,7 +80,7 @@
 
 .footer > div { display: flex; flex-direction: column; z-index: 1; }
 .footer p { font-size: 1rem; color: #fff; }
-.footer .social { display: flex; padding-top: 1rem; }
+.footer .social { display: flex; padding-top: 1rem; cursor: pointer; }
 .footer .social img { height: 1.5rem; margin-right: 1rem; }
 .footer .copy { color: #525252; margin-top: 4.5rem; }
 
@@ -207,7 +207,7 @@
     .project-filter h5, .services h5, .fillout h5 { font-size: 1.5rem; }
     .fillout h5 { margin-bottom: 2rem; }
     .services h5 { margin-bottom: .85rem; }
-    .hero h1 { font-size: 3rem; }
+    .hero h1 { font-size: 3rem; max-width: 40rem; }
     .btn, .footer p, .menu a, .showcase p, .viewmore p,
     .project-small.project .title h3, .services p { font-size: .9rem; }
     .nav img { height: 2.5rem; }
@@ -312,7 +312,7 @@
     .showcase img { width: 100%; }
     .hero > div > div { flex-direction: column; }
     .showcase .desc, .showcase.right .desc { padding: 0 1rem 2rem 1rem; }
-    .hero h1 { font-size: 1.5rem; margin-bottom: 2rem; }
+    .hero h1 { font-size: 1.5rem; margin-bottom: 2rem; max-width: 20rem; }
     .btn-purple { margin-left: 0; margin-top: .5rem; }
     .newsletters input[type="email"] { padding-right: 3.2rem; }
     .ready h1 { margin: 0 0 .5rem 0; }
