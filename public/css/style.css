@@ -224,7 +224,10 @@
     .showcase { padding: 6.6rem 0 2rem 0; }
     .projects { padding: 3rem 0 0 0; }
     .ready { padding: 8rem 0; }
-    video { width: 110%; }
+}
+
+@media screen and (max-width: 1250px) {
+    #video { height: 100%; width: auto; }
 }
 
 @media screen and (max-width: 1150px) {
@@ -236,7 +239,6 @@
     .footer { padding: 2rem; }
     .showcase p { max-width: 25rem; }
     .showcase img { width: 30rem; }
-    video { width: 120%; }
 }
 
 @media screen and (max-width: 1000px) {
@@ -245,7 +247,6 @@
     .fillout input { width: 21.5rem; }
     .services > div { margin: 0 4rem; }
     .project-filter { padding-left: 2rem; }
-    video { width: 130%; }
     .showcase { flex-direction: column; }
     .showcase.right { flex-direction: column-reverse; }
     .showcase .desc, .showcase.right .desc { padding: 0 0 2rem 0; }
@@ -271,7 +272,6 @@
     .project-small { width: 50%; }
     .project-extra, .menu { display: none; }
     .footer .logo-stamp { height: 11rem; }
-    video { width: 200%; }
 }
 
 @media screen and (max-width: 600px) {
@@ -297,18 +297,16 @@
     .menu.foot { align-self: center; }
     .menu.foot a { margin: 0 1rem; }
     .newsletters { justify-content: flex-start; position: relative; left: -2rem;
-        margin-bottom: 1.5rem; margin-top: 1.5rem; }
+        margin-bottom: .5rem; margin-top: 1.5rem; }
     .footer .copy { margin-top: 1.85rem; }
     .nav { padding: 1rem; }
     .hero { padding: 0 1rem; }
     .showcase .desc, .showcase.right .desc { padding: 0 0 2rem 0; }
     .footer { padding: 2rem 1rem; }
-    video { width: 300%; }
     .hamburger { right: 0rem; }
 }
 
 @media screen and (max-width: 500px) {
-    video { width: 400%; }
     .showcase img { width: 100%; }
     .hero > div > div { flex-direction: column; }
     .showcase .desc, .showcase.right .desc { padding: 0 1rem 2rem 1rem; }
